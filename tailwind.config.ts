@@ -20,8 +20,16 @@ const config: Config = {
         md: "2rem",
       },
     },
-    extend: {},
+    extend: {
+      fontFamily:{
+        sans:'var(--font-sans)',
+        serif:'var(--font-serif)',
+      }
+    },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: ["valentine"],
+  },
 };
 export default config;

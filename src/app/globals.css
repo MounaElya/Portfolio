@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .nav-item-div {
+    @apply navbar bg-base-100 flex justify-center items-center relative top-3 border border-red-900/15 bg-red-900/10 backdrop:blur rounded-full w-fit m-auto;
+  }
+  .nav-item {
+    @apply btn btn-ghost text-xl;
+  }
+}
